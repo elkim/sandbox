@@ -35,6 +35,8 @@ var urlParams = {};
 		queue.on("progress", handleProgress, this);
 		queue.on("fileload", handleFileLoad, this);
 		queue.on("complete", handleComplete, this);
+
+		queue.setMaxConnections(8);
 		
 		// load our assets, starting with everything we need to render the spritesheet:
 		queue.loadManifest([
