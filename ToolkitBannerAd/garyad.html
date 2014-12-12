@@ -18,8 +18,8 @@ function init() {
 	canvas = document.getElementById("canvas");
 
 	var manifest = [
-		{src:"sounds/EnemyHit.mp3", id:"EnemyHit"},
-		{src:"sounds/LaserGunShot.mp3", id:"LaserGunShot"}
+		{"EnemyHit":"sounds/EnemyHit.mp3"},
+		{"LaserGunShot":"sounds/LaserGunShot.mp3"}
 	];
 
 	var loader = new createjs.LoadQueue(false);
